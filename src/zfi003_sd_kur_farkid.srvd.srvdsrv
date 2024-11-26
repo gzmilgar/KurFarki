@@ -1,0 +1,10 @@
+@EndUserText.label: 'Kur Farkı Service Definition'
+define service ZFI003_SD_KUR_FARKID {
+  expose ZFI003_DD_BEHAVIOURD        as KurFarkiEntity;
+  expose ZFI003_DD_CUSTOMER_SHD      as CustomerSH;
+  expose ZFI003_DD_SUPPLIER_SHD      as SupplierSH;
+  expose ZFI003_DD_GLACCOUNT_SHD     as GLAccountSH;
+  expose ZFI003_DD_COST_CENTER_SHD   as CostCenterSH;
+  expose ZFI003_DD_PROFIT_CENTER_SHD as ProfitCenterSH;
+  expose I_CurrencyStdVH             as Currency;
+}

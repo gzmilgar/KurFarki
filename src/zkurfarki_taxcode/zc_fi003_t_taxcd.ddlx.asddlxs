@@ -1,0 +1,144 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'TaxCode'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'TaxCode'
+annotate view ZC_FI003_T_TAXCD with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Vergi'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Vergi'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  TaxCode;
+  
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Vergi Tipi'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Vergi Tipi'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  TaxType;
+  
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Hareket Tipi'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Hareket Tipi'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  MoveType;
+  
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Vergi Yüzdesi'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Vergi Yüzdesi'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Percent;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Borç Alacak'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Borç Alacak'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  DebitCredit;
+  
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Created On'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Created On'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Changed By'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedAt;
+}

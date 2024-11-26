@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_FI003_T_TAXCD'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_FI003_T_TAXCD'
+  }
+}
+define service ZUI_FI003_T_TAXCD_O4 provider contracts odata_v4_ui {
+  expose ZC_FI003_T_TAXCD;
+}
