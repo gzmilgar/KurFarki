@@ -109,6 +109,8 @@ CLASS lhc_ZFI003_DD_Behaviour IMPLEMENTATION.
       documentreferenceid = ls_data-%param-doc_reference
       TaxDeterminationDate = ls_data-%param-post_date
 
+*FOR COMMIT
+
       _aritems = COND #( WHEN ls_data-%param-customer IS NOT INITIAL
                          THEN VALUE #( ( GLAccountLineItem = '000001'
                                          customer          = ls_data-%param-customer
